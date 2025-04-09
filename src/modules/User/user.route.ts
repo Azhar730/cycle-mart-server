@@ -13,7 +13,7 @@ userRoute.post(
   userControllers.createUser,
 );
 userRoute.get('/:userId', userControllers.getSingleUser);
-userRoute.put('/:userId', userControllers.updateUser);
-userRoute.delete('/:userId', userControllers.deleteUser);
-userRoute.get('/', userControllers.getAllUser);
+userRoute.put('/:userId',auth('admin'), userControllers.updateUser);
+userRoute.delete('/:userId',auth('admin'), userControllers.deleteUser);
+userRoute.get('/',auth('admin'), userControllers.getAllUser);
 export const UserRoutes = userRoute;

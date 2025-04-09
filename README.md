@@ -120,10 +120,10 @@ SP_RETURN_URL=<your_return_url>
 ### Users
 
 - `POST /api/users/create-admin`: Create a new admin user (admin only).
-- `GET /api/users`: Get all users.
+- `GET /api/users`: Get all users (admin only).
 - `GET /api/users/:userId`: Get a single user by ID.
-- `PUT /api/users/:userId`: Update a user.
-- `DELETE /api/users/:userId`: Delete a user.
+- `PUT /api/users/:userId`: Update a user (admin only).
+- `DELETE /api/users/:userId`: Delete a user (admin only).
 
 ## Project Structure
 
