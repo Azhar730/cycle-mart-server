@@ -48,25 +48,6 @@ const login = async (payload: TLoginUser) => {
     verifiedUser,
     token,
   };
-
-  // const token = jwt.sign(
-  //   {
-  //     id: user?._id,
-  //     name: user?.name,
-  //     email: user?.email,
-  //     role: user?.role,
-  //   },
-  //   config.jwt_access_secret as string,
-  //   { expiresIn: '1d' },
-  // );
-  // return {
-  //   id: user?._id,
-  //   name: user?.name,
-  //   email: user?.email,
-  //   role: user?.role,
-  //   status: user?.status,
-  //   token,
-  // };
 };
 
 const changePassword = async (
