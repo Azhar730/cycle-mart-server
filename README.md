@@ -71,24 +71,16 @@ SP_RETURN_URL=<your_return_url>
    ```
 
 3. Set up the environment variables in the `.env` file.
-
-4. Build the project:
-
-   ```sh
-   npm run build
+```sh
+   rename .env.example to .env
    ```
 
-5. Start the development server:
+4. Start the development server:
 
    ```sh
    npm run dev
    ```
-
-6. For production:
-
-   ```sh
-   npm run start:prod
-   ```
+ ```
 
 ## API Endpoints
 
